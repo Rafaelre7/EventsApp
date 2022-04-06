@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">EventosApp</string>
+    <string name="connection_problem">Erro na conexão !!!</string>
+    <string name="error_message">Error request !!!</string>
+    <string name="email">Email</string>
+    <string name="nome">Nome</string>
+    <string name="titulo">Titulo</string>
 </resources>
