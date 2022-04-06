@@ -1,6 +1,7 @@
 package com.example.eventosapp.di
 
 import android.content.Context
+import com.example.eventosapp.BuildConfig
 import com.example.eventosapp.data.remote.EventRemoteDataSource
 import com.example.eventosapp.data.remote.EventService
 import com.example.eventosapp.data.repository.CheckInRepository
@@ -26,7 +27,7 @@ object AppModule {
     @Singleton
     @Provides
     fun provideRetrofit(gson: Gson): Retrofit = Retrofit.Builder()
-        .baseUrl("https://5f5a8f24d44d640016169133.mockapi.io/api/")
+        .baseUrl(BuildConfig.BASE_URL)
         .addConverterFactory(GsonConverterFactory.create(gson))
         .build()
 
